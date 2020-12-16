@@ -1,0 +1,532 @@
+* {box-sizing: border-box;}
+a:visited, a:active, a{
+    color: inherit;
+}
+body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+ul{
+    all: unset;
+    list-style: none;
+}
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tochechki{
+    text-align:center;
+}
+.headersubmenuright:after{
+    content: "\2192";
+}
+.headersubmenubottom:after{
+    content: '\25BC';
+}
+.header{
+    height: 150px;
+    display: flex;
+}
+.header h1{
+    width:30%;
+}
+.header .menu{
+    width:70%;
+}
+.hamburger-menu{
+    display: none;
+}
+.menu>ul {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+
+.menu a, p {
+    all:unset;
+}
+a.active_nav, p.active_nav {
+    color: #BDA47D;
+}
+.menu a:hover,.menu p:hover, .hamburger-menu a:hover,.hamburger-menu p:hover{/*наведение на пункты меню*/
+    cursor: pointer;
+    color: #BDA47D;
+}
+
+.menu>ul li{
+    width:25%;
+}
+.submenu, .submenumobile{
+    display: none;
+}
+.submenu>ul li{
+    display: block;
+    width: 150px;
+}
+
+.dropdown,.dropdownSketch{
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover>.submenu{
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: beige;
+    width: 150px;
+}
+
+
+.dropdownSketch:hover>.submenu{
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: -5px;
+    z-index: 100;
+    background-color: beige;
+    width: 150px;
+}
+
+.submenu li::before{
+    margin-right: 20px;
+    content: "\25B8";
+    font-size: 2em;
+    color: #C4C4C4;
+}
+.mySlides {display: none;}
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.info {
+    /*flex-direction: row-reverse;*/
+    margin-top: 50px;
+    display: flex;
+}
+.info_text,.info_photo{
+    width: 50%;
+}
+.info_text{
+    padding: 10px;
+    text-align: justify;
+}
+.info_text p,.info_text h2{
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.info_text h2{
+    padding-bottom: 40px;
+}
+.info_photo{
+    background-color: antiquewhite;
+}
+.info_photo img{
+    margin: 30px auto;
+    display: block;
+    max-width: 80%;
+}
+.image3D{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.contact_img{
+    width: 100%;
+}
+.contact_img img{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.icons img{
+    max-width: 100px;
+}
+.shop_text{
+    padding-top: 30px;
+    display: block;
+    text-align: center;
+    color: #593a1e;
+    font-size: 1.5em;
+}
+
+.mySlideshand {
+    display: none;
+    width:100%;
+    margin: auto;
+}
+.mySlideshand img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-containerhand {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+
+    width: auto;
+    padding: 16px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev p, .next p {
+    vertical-align: middle;
+    display: inline-block;
+    height: 30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fadehand {
+    -webkit-animation-name: fadehand;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadehand;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadehand {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fadehand {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*стили для модального окна*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: rgba(0,0,0,0.9);
+}
+
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.subimg{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: #BDA47D;
+}
+.subimg hr{
+    background-color: #BDA47D;
+    border: 1px solid #BDA47D;
+}
+.close {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 250px;
+    top: 10px;
+}
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+.modal-body {
+    height: auto;
+    margin-top: 30px;
+}
+.modal-sketch{
+    max-width: 100%;
+}
+.modal-sketch img{
+    display: block;
+    max-height: 80vh;
+    margin: 0 auto;
+    width: auto;
+}
+.sketchImgs img:hover, .digitalImgs img:hover, .traditionalImgs img:hover{
+    cursor: pointer;
+}
+.digitalImgs, .traditionalImgs, .sketchImgs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.digitalImgs img{
+    width: 33%;
+    padding: 10px;
+}
+.traditionalImgs img{
+    width: 50%;
+    padding: 15px;
+}
+.sketchImgs img{
+    width: 33%;
+    padding: 5px;
+}
+.navigationYear{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.navigationYear ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.navigationYear ul li a{
+    text-decoration: none;
+    background-color: #EBE4E4;
+    padding: 5px 15px;
+}
+.navigationYear ul li a:hover{
+    background-color: #BDA47D;
+}
+.classButtonBackground a{
+    background-color: #BDA47D !important;
+}
+@media screen and (max-width: 1400px) {
+    .close {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 800px){
+    .modal-sketch img{
+        width: 80vw;
+        height: auto;
+    }
+}
+/*М О Б И Л Ь Н А Я   В Е Р С Т К А*/
+@media screen and (max-width: 650px) {
+    .shop_text{
+        font-size: 1em;
+    }
+    .submenumobile>ul li{
+        display: block;
+        width: 100%;
+        padding: 12px 24px;
+        color: #333;
+        font-size: 15px;
+    }
+    /*.dropdown:focus>.submenumobile, .dropdown:active>.submenumobile{
+        display: block;
+    }*/
+    .dropdown_aquamarine{
+        background-color: #e9e1b0;
+    }
+    .dropdown_aqua{
+        background-color: #c8e5b3;
+    }
+    .submenumobile>ul li a{
+        text-decoration: none;
+    }
+    .menu{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+        position: fixed;
+        right: 20px;
+        top:20px;
+        z-index: 500;
+    }
+    /* скрываем чекбокс */
+    #menu__toggle {
+        opacity: 0;
+    }
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #BDA47D;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #faebd7;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-size: 20px;
+
+        text-decoration: none;
+    }
+    .menu__item p{
+        margin: 0px;
+        padding: 10px;
+    }
+    .menu__item:hover {
+        background-color: #ffcc99;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        right: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .menu__box {
+        transition-duration: .25s;
+    }
+    .menu__item {
+        transition-duration: .25s;
+    }
+    .info_text, .info_photo{
+        width: 100%;
+    }
+    .info{
+        display: block;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px){
+    .icons img{
+        max-width: 50px;
+    }
+    .navigationYear ul li{
+        width: 33%;
+        padding-bottom: 15px;
+    }
+    .navigationYear ul li a{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+

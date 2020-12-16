@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Characters</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <h1>pollyspolly</h1>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html">Главная</a></li>
+                <!--<li><a class="menu__item headersubmenubottom">Мои работы</a></li>-->
+                <li class="dropdown">
+
+                    <p onclick="tapTapMenu(this)" class="headersubmenubottom menu__item active_nav">Мои работы</p>
+                    <div class="submenumobile dropdown_aqua">
+                        <ul>
+                            <li>
+                                <a href="digital.html">Digital art</a>
+                            </li>
+                            <li>
+                                <a href="traditional.html">Traditional art</a>
+                            </li>
+                            <li class="dropdown">
+                                <p onclick="tapTapMenu(this)" class="headersubmenuright">Sketch</p>
+                                <div class="submenumobile dropdown_aquamarine">
+                                    <ul>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2015">2015</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2016">2016</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2017">2017</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2018">2018</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2019">2019</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2020">2020</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="3D.html">3D art</a>
+                            </li>
+                            <li>
+                                <a class="active_nav" href="characters.html">Персонажи</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="menu__item" href="shop.html">Магазин</a></li>
+                <li><a class="menu__item" href="contact.html">Связь</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul >
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="dropdown">
+
+                    <p class="headersubmenubottom active_nav">Мои работы</p>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="digital.html">Digital art</a>
+                            </li>
+                            <li>
+                                <a href="traditional.html">Traditional art</a>
+                            </li>
+                            <li class="dropdownSketch">
+                                <p class="headersubmenuright">Sketch</p>
+                                <div class="submenu">
+                                    <ul>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2015">2015</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2016">2016</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2017">2017</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2018">2018</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2019">2019</a>
+                                        </li>
+                                        <li>
+                                            <a class="hrefyear" href="sketch.html?year=2020">2020</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="3D.html">3D art</a>
+                            </li>
+                            <li>
+                                <a class="active_nav" href="characters.html">Персонажи</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="shop.html">Магазин</a>
+                </li>
+                <li>
+                    <a href="contact.html">Связь</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <img class="close" src="images/crestic.svg">
+            <!--<span class="close">&times;</span>-->
+            <div class="modal-body modal-sketch">
+
+            </div>
+        </div>
+    </div>
+    <div class="traditionalImgs">
+        <img onclick="clickDigital(this.src)" src="images/Person/_pollyspolly__20201129_47.png">
+        <img onclick="clickDigital(this.src)" src="images/Person/_pollyspolly__20201129_53.png">
+        <img onclick="clickDigital(this.src)" src="images/Person/_pollyspolly__20201129_59.png">
+        <img onclick="clickDigital(this.src)" src="images/Person/_pollyspolly__20201129_67.png">
+        <img onclick="clickDigital(this.src)" src="images/Person/_pollyspolly__20201129_74.png">
+        <img onclick="clickDigital(this.src)" src="images/Person/_pollyspolly__20201129_86.png">
+        <img onclick="clickDigital(this.src)" src="images/Person/_pollyspolly__20201129_85.png">
+    </div>
+
+
+</div>
+</body>
+</html>

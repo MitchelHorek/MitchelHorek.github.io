@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body> 
+    <div class="main">
+        <div class="header">
+            <h1>pollyspolly</h1>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item active_nav" href="index.html">Главная</a></li>
+                    <!--<li><a class="menu__item headersubmenubottom">Мои работы</a></li>-->
+                    <li class="dropdown">
+                        <p onclick="tapTapMenu(this)" class="headersubmenubottom menu__item">Мои работы</p>
+                        <div class="submenumobile dropdown_aqua">
+                            <ul>
+                                <li>
+                                    <a href="digital.html">Digital art</a>
+                                </li>
+                                <li>
+                                    <a href="traditional.html">Traditional art</a>
+                                </li>
+                                <li class="dropdown">
+                                    <p onclick="tapTapMenu(this)" class="headersubmenuright">Sketch</p>
+                                    <div class="submenumobile dropdown_aquamarine">
+                                        <ul>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2015">2015</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2016">2016</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2017">2017</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2018">2018</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2019">2019</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2020">2020</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="3D.html">3D art</a>
+                                </li>
+                                <li>
+                                    <a href="characters.html">Персонажи</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="menu__item" href="shop.html">Магазин</a></li>
+                    <li><a class="menu__item" href="contact.html">Связь</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul >
+                    <li>
+                        <a class="active_nav" href="index.html">Главная</a>
+                    </li>
+                    <li class="dropdown">
+                        <p class="headersubmenubottom">Мои работы</p>
+                        <div class="submenu">
+                            <ul>
+                                <li>
+                                    <a href="digital.html">Digital art</a>
+                                </li>
+                                <li>
+                                    <a href="traditional.html">Traditional art</a>
+                                </li>
+                                <li class="dropdownSketch">
+                                    <p class="headersubmenuright">Sketch</p>
+                                    <div class="submenu">
+                                        <ul>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2015">2015</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2016">2016</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2017">2017</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2018">2018</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2019">2019</a>
+                                            </li>
+                                            <li>
+                                                <a class="hrefyear" href="sketch.html?year=2020">2020</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="3D.html">3D art</a>
+                                </li>
+                                <li>
+                                    <a href="characters.html">Персонажи</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="shop.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Связь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/slider/slider1.png">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/slider/slider2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/slider/PicsArt_11-24-11.04.24.jpg">
+                </div>
+
+            </div>
+            <br>
+
+            <div class="tochechki">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info_text">
+                <h2>Biography</h2>
+                <p>Я мультиплекатор из Москвы, которая создает разного рода анимацию,
+                    для коммерческого использования, а также для частных клиентов.
+                    Меня вдохновляют интересные лица, женские формы, позы и природа, а также города,
+                    в которых я была, такие как Санкт-Петербург.</p>
+                <p>Когда я создаю иллюстрации, я всегда с энтузиазмом экспериментирую с разными материалами.
+                    Я всегда начинаю с того, что кладу карандаш на лист бумаги.
+                    Затем я продолжаю делать то, что естественно в этот день.
+                    Часто это тушь, акварель, иногда пастель, акрил или вырезанная бумага.
+                    На последнем этапе Photoshop и Illustrator готовят мои иллюстрации для печати и экранов.</p>
+            </div>
+            <div class="info_photo">
+                <img src="images/photoPolly/glush.png">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
