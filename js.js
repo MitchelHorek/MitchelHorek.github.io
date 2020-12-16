@@ -2,21 +2,18 @@ let slideIndexHand = 1;
 let slideIndex = 0;
 let currentSliderHand;
 let crestic;
-let array2015 = ["_pollyspolly__20201107_230.png","_pollyspolly__20201107_231.png","_pollyspolly__20201107_232.png",
-    "_pollyspolly__20201107_233.png","_pollyspolly__20201107_234.png"];
-let array2016 = ["_pollyspolly__20201107_208.png", "_pollyspolly__20201107_188.png","_pollyspolly__20201107_226.png",
-    "_pollyspolly__20201107_187.png","_pollyspolly__20201107_205.png"];
-let array2017 = ["_pollyspolly__20201107_128.png","_pollyspolly__20201107_129.png","_pollyspolly__20201107_136.png",
-    "_pollyspolly__20201107_133.png", "_pollyspolly__20201107_132.png","_pollyspolly__20201107_131.png"];
-let array2018 = ["_pollyspolly__20201107_65.png","_pollyspolly__20201107_68.png","_pollyspolly__20201107_71.png",
-    "_pollyspolly__20201107_74.png","_pollyspolly__20201107_78.png","_pollyspolly__20201107_82.png",
-    "_pollyspolly__20201107_96.png"];
-let array2019 = ["_pollyspolly__20201107_63.png","_pollyspolly__20201107_61.png","_pollyspolly__20201107_60.png",
-    "_pollyspolly__20201107_55.png","_pollyspolly__20201107_49.png","_pollyspolly__20201107_46.png",
-    "_pollyspolly__20201107_40.png"];
-let array2020 = ["_pollyspolly__20201103_6.png","_pollyspolly__20201103_1.png","_pollyspolly__20201103_7.png",
-    "_pollyspolly__20201103_2.png","_pollyspolly__20201103_3.png","_pollyspolly__20201103_5.png",
-    "_pollyspolly__20201103_4.png","_pollyspolly__20201107_5.png"];
+let array2015 = ["s1.png","s2.png","s3.png",
+    "s4.png","s5.png"];
+let array2016 = ["s1.png","s2.png","s3.png",
+    "s4.png","s5.png"];
+let array2017 = ["s1.png","s2.png","s3.png",
+    "s4.png","s5.png","s6.png"];
+let array2018 = ["s1.png","s2.png","s3.png",
+    "s4.png","s5.png","s6.png", "s7.png"];
+let array2019 = ["s1.png","s2.png","s3.png",
+    "s4.png","s5.png","s6.png","s7.png"];
+let array2020 = ["s1.png","s2.png","s3.png",
+    "s4.png","s5.png","s6.png","s7.png", "s8.png"];
 $(document).ready(
     function (){
         let urlstring = location.href;
